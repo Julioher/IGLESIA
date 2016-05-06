@@ -3,6 +3,7 @@
 
 <?php
 	include("conexion.php");
+	
 	echo "datos enviados correctamente";
 
 	$txtidministerio= $_POST['txtidministerio'];
@@ -25,12 +26,12 @@
 	}
 	
 	if($_POST['btnModificar']){
-		$Modificar= mysql_query("update  ministerio SET nombre='$txtnombreministerio' where idMinisterio='$txtidministerio'");
+		$Modificar= mysql_query("UPDATE  ministerio SET nombre='$txtnombreministerio' where idMinisterio='$txtidministerio'");
 	
 	}
 
 	if($_POST['btnEliminar']){
-		$Eliminar= mysql_query("delete  from ministerio where idMinisterio='$txtidministerio'");
+		$Eliminar= mysql_query("DELETE  from ministerio where idMinisterio='$txtidministerio'");
 	
 	}
 

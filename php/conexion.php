@@ -6,6 +6,7 @@
 	$db='iglesia2';
 	$conexion=mysql_connect("$host", "$user", "$password") or die(mysql_error());
 	mysql_select_db($db, $conexion) or die("Problemas en la selección de la base de datos");
+	
 	date_default_timezone_set('America/El_Salvador');
 
 /*function conectar(){

@@ -21,9 +21,10 @@ $cmbCargo = $_POST['cmbCargo'];
 $cmbEstado = $_POST['cmbEstado'];
 
 //variables que van a la tabla atributo
-$txtnombreatributo = $_POST['txtnombreatributo'];
+/*$txtnombreatributo = $_POST['txtnombreatributo'];
 $insertar2 = "INSERT into atributo (nombre) VALUES ('$txtnombreatributo')";
-$resultado_natributo = mysql_query($insertar2) or die("Error en la inserción de los datos");
+$resultado_natributo = mysql_query($insertar2) 
+or die("Error en la inserción de los datos");*/
 
 
 $insertar = "INSERT into feligres(pNombre,sNombre,pApellido,sApellido,Genero,
@@ -31,20 +32,10 @@ telefonoMovil,telefonoCasa,direccion,cargo,estado)
 VALUES('$txtPrimer_nombre','$txtSegundo_nombre','$txtPrimer_apellido','$txtSegundo_apellido
 ','$cmbGenero','$txtTel_Movil','$txtTel_casa','$txtDireccion','$cmbCargo','$cmbEstado')";
 $resultado = mysql_query($insertar) or die("Error en la inserción de los datos");
-
-
-
-
 /*$insertar3= "INSERT into ministerio (nombre)  VALUES('$cbBienvenida')";
 $resultado2 = mysql_query($con, $insertar2) or die("Error en la inserción de los datos");
 $resultado3 = mysql_query($con, $insertar3) or die("Error en la inserción de los datos");*/
-
-
-
-
-
 mysql_close($conexion);
-
 echo "datos insertados correctamente";
 
 ?>
