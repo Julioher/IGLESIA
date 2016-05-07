@@ -45,7 +45,7 @@ border: 0.1px solid gray;
 <div id="padre"><!--inicio div padre-->
 	<h2>FORMULARIO</h2>
 	
-<form action="principal.php" method="POST"><!--inicio del formulario-->
+<form action="../php/principal.php" method="POST"><!--inicio del formulario-->
 	<table id="tbpadre" border><!--inicio tabla padre-->
 		
 
@@ -160,7 +160,7 @@ border: 0.1px solid gray;
 				<div id="divAE" style="width 200px; height: 100px; background: #fff;
 				 border: 1px solid gray ; overflow-y: auto;"> <!--inicio de divAE-->
 						<?php
-							include ("conexion.php");
+							include ("../php/conexion.php");
 							//$con=conectar();
 							
 							$registros = mysql_query("SELECT * FROM atributo");
@@ -185,7 +185,7 @@ border: 0.1px solid gray;
 				<div id="divMS" style="width 200px; height: 100px; background: #fff;
 				 border: 1px solid gray; overflow-y: auto;"> <!--inicio de divMS-->
 					<?php
-							include ("conexion.php");
+							include ("../php/conexion.php");
 							//$con=conectar();
 							
 							$registros = mysql_query("SELECT * FROM ministerio ORDER BY nombre");

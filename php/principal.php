@@ -2,7 +2,7 @@
 
 <?php
 
-include ("conexion.php");
+include ("../php/conexion.php");
 //$conexion=conectar();
 echo "conexión buena <br>";
 

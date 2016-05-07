@@ -1,7 +1,7 @@
 
 
 <?php
-include("conexion.php");
+include("../php/conexion.php");
 echo "datos enviados correctamente";
 //variables que van a la tabla atributo
 $txtnombreatributo = $_POST['txtnombreatributo'];

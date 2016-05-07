@@ -47,7 +47,7 @@ border: 0.1px solid gray;
 <div id="padre"><!--inicio div padre-->
 	<h2>Mantenimiento de atributos</h2>
 	
-<form action="funciones_atributo.php" method="POST">    <!--inicio del formulario-->
+<form action="../php/funciones_atributo.php" method="POST">    <!--inicio del formulario-->
 	<table id="tbpadre" ><!--inicio tabla padre-->
 		<tr> <!--inicio de primera fila-->
 			<td><label>Id:</label></td>
